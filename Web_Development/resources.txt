@@ -1,0 +1,13 @@
+https://itnext.io/plain-socket-communication-between-two-go-programs-the-easy-way-bd5ac5819eb6
+https://preettheman.medium.com/how-to-build-unbelievable-web-applications-with-go-3770e17652cd
+https://www.w3schools.com/css/css_border.asp
+https://www.codesnail.com/css-text-reveal-from-smoke-animation/
+https://www.sliderrevolution.com/resources/css-menu/
+https://github.com/gin-gonic/gin/tree/master/render
+https://www.codesnail.com/css-text-reveal-from-smoke-animation/
+https://freshman.tech/web-development-with-go/#downloading-the-starter-files
+https://www.mongodb.com/docs/drivers/go/current/fundamentals/connection/#std-label-golang-connection-guide
+https://pkg.go.dev/go.mongodb.org/mongo-driver/mongo
+https://www.w3schools.com/mongodb/mongodb_mongosh_create_database.php
+https://www.w3schools.com/bootstrap5/bootstrap_cards.php
+https://github.com/go-resty/resty

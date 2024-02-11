@@ -1,0 +1,248 @@
+/* Reset some default browser styles */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+
+  
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+.logo {
+    font-size: 1.5rem;
+  }
+  
+  /* Dropdown styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+.pastry{
+    background-image: url('testdessert2.jpg');
+  background-size: cover;
+  color: white;
+  height: 300px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+.pastry h1 {
+    padding-top: 100px;
+}
+
+.navbar-brand {
+  color: grey;
+}
+
+.navbar-brand:hover{
+  color: #f8f9fa;
+}
+.navbar {
+    background-color: #333; /* Darker background */
+    opacity: 0.9; /* Slight transparency for modern feel */
+  }
+  
+.nav-link {
+    color: grey; /* White text for better contrast */
+  }
+  
+.nav-link:hover {
+    color: #f8f9fa; /* Slightly different shade for hover effect */
+  }
+  
+
+  
+.notification {
+      position: fixed;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #4CAF50;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      width: 200px;
+      border-radius: 5px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      z-index: 9999;
+    }
+  
+.cart-icon {
+      padding: 5px;
+      margin: 1px 0;
+      border: 1px solid #ccc;
+      background-color: #f9f9f9;
+    }
+    
+.dropdown_item{
+      position: relative;
+      
+    }
+.dropdown-menu {
+
+    opacity: 0.9; /* Slight transparency for modern feel */
+}
+
+.pastry-section {
+  text-align: center; /* Center text horizontally */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Adjust as needed */
+}
+  
+.pastry-section h1,
+.pastry-section p {
+    font-size: 30px;
+    text-shadow: 2px 2px 4px #000000;
+    font-family: 'Cherry Swash', cursive;
+}
+
+  /* Dessert cards styles */
+.dessert-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+  }
+  
+.dessert-cards .card {
+    width: 300px;
+    margin-bottom: 30px;
+  }
+  
+.card img {
+    width: 100%;
+    height: auto;
+  }
+  
+.card-body {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+.card-body h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Adds shadow for depth */
+    transition: 0.3s; /* Smooth transition for hover effect */
+    margin: 10px;
+    border-radius: 10px;
+
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); /* Larger shadow on hover */
+}
+
+.custom-card {
+  margin: 0 auto; /* Centers the card */
+}
+.custom-order-btn {
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3); /* Shadow with a color similar to the button */
+  transition: all 0.3s ease;
+}
+
+.custom-order-btn:hover, .custom-order-btn:focus {
+  background-color: #0056b3; /* Darker shade for hover */
+  box-shadow: 0 6px 12px rgba(0, 123, 255, 0.5);
+  color: white;
+  text-decoration: none;
+}
+  
+  /* Footer styles */
+  footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer .fab {
+    font-size: 20px; /* Adjust icon size as needed */
+}
+
+footer h5 {
+    margin-bottom: 15px;
+}
+
+/* Model Style */
+.modal-content {
+  background-color: #fff; /* White background for a clean look */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border: none; /* Remove default border */
+}
+
+.modal-header, .modal-footer {
+  background-color: #f8f9fa; /* Slightly different background for distinction */
+  border-bottom: 1px solid #e9ecef; /* Add a border to the header */
+  border-top: 1px solid #e9ecef; /* Add a border to the footer */
+  padding: 15px; /* Increase padding for better spacing */
+}
+
+.modal-title {
+  font-weight: bold; /* Make title bold */
+}
+
+.btn-close {
+  background-color: transparent; /* Clear background for close button */
+  border: none; /* Remove border */
+  font-size: 1.5rem; /* Increase the size of the close icon */
+}
+
+.modal-body {
+  padding: 20px; /* Increase padding for more space */
+}
+
+.modal-footer .btn {
+  border-radius: 5px; /* Rounded corners for buttons */
+  font-weight: bold; /* Bold font for better readability */
+}
+
+.modal-footer .btn-danger {
+  background-color: #dc3545; /* Bootstrap danger color for close button */
+  color: white; /* White text */
+}
+
+/* Description button */
+.custom-description-btn {
+  background-color: #007bff; /* Adjust color as needed */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+.custom-description-btn:hover, .custom-description-btn:focus {
+  background-color: #0056b3; /* Darker shade for hover */
+  box-shadow: 0 6px 12px rgba(0, 123, 255, 0.5);
+  color: white;
+  text-decoration: none;
+}

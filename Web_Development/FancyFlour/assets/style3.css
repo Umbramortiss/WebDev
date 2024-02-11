@@ -1,0 +1,186 @@
+body {
+  font-family: "Libre Baskerville", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  background-image: url('testdessert2.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+h1 {
+  text-align: center;
+  margin: 40px 0;
+  font-size: 30px;
+  color: #ecf0f1;
+  text-shadow: 2px 2px 4px #000000;
+  font-family: 'Cherry Swash', cursive;
+}
+
+p {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  color: #ecf0f1;
+  font-family: 'Cherry Swash', cursive;
+  font-size: 16px;
+}
+
+li {
+  float: right;
+}
+
+/* Styling the nav bar */
+nav {
+  margin: 25px auto 0;
+  position: relative;
+  width: 380px;
+  height: 50px;
+  background-color: #34495e;
+  background: none;
+  border-radius: 8px;
+  font-size: 0;
+}
+
+nav a {
+  line-height: 50px;
+  height: 100%;
+  font-size: 15px;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+}
+
+nav .animation {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  z-index: 0;
+  transition: all 0.5s ease 0s;
+  border-radius: 8px;
+}
+
+a:nth-child(1) {
+  width: 100px;
+}
+
+a:nth-child(2) {
+  width: 110px;
+}
+
+a:nth-child(3) {
+  width: 110px;
+}
+
+nav .start-home,
+a:nth-child(1):hover~.animation {
+  width: 130px;
+  left: 0px;
+  background-color: #1abc9c;
+}
+
+nav .start-about,
+a:nth-child(2):hover~.animation
+ {
+  width: 130px;
+  left: 130px;
+  background-color: #e74c3c;
+}
+
+nav .start-desserts,
+a:nth-child(3):hover~.animation,
+.start-desserts.active~.animation{
+  width: 150px;
+  left: 230px;
+  background-color: #3498db;
+}
+
+li a,
+.dropbtn {
+  display: inline-block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+   z-index: 1;
+}
+
+/* Styling the dropdown button */
+.dropbtn {
+  background-color: #34495e;
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* The Container <div> - Needed to position the dropdown content */
+li .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+div .dropdown-content.animation {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  z-index: 0;
+  transition: all 0.5s ease 0s;
+  border-radius: 8px;
+}
+
+a:nth-child(1) {
+  width: 100px;
+}
+
+div .start-cupcakes,
+a:nth-child(1):hover~.animation {
+  width: 140px;
+  left: 0px;
+  background-color: #1abc9c;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  left: 240px;
+  display: none;
+  position: absolute;
+  background-color: #34495e;
+  background: none;
+  border-radius: 8px;
+  min-width: 120px;
+  padding: 12px 0;
+ 
+  z-index: 1;
+  top: 50px; /* Adjust the top value to position the dropdown below the menu item */
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: white; /* Adjusted text color */
+  text-decoration: none;
+  display: block;
+  font-family: 'Cherry Swash', cursive;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #1abc9c; /* Updated hover color */
+  border-radius: 8px;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
